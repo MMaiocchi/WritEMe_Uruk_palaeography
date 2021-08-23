@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <!-- Include jquery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+
+  <!-- Include jquery mark ( for highlighting text )-->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/6.1.0/jquery.mark.min.js"></script>
+
+  <!-- Include Data Tables-->
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.10.12/css/jquery.dataTables.min.css">
+  <!-- CSS -->
+  <script src="https://cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js"></script>
+  <!-- JS -->
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+
+  <style>
+    html,
+    body {
+      width: 100%;
+      height: 100%;
+    }
+
+    body {
+      font-family: Verdana;
+      font-size: 10.5pt;
+      line-height: 12pt;
+      margin: 0;
+    }
+
+    .float-left-child {
+      float: left
+    }
+
+
+    .inline-block-child {
+      display: inline-block;
+    }
+
+
+    .flex-parent {
+      display: flex;
+    }
+
+    .flex-child {
+      flex: 1;
+    }
+
+
+    .inline-flex-parent {
+      display: inline-flex;
+    }
+
+
+    /* base css */
+    body {
+      padding: 3rem;
+    }
+
+    h3 {
+      margin: 1.5rem 0 .25em;
+      clear: both;
+    }
+
+    .parent {
+      padding: 1rem
+    }
+
+    .child {
+      padding: 1rem
+    }
+    
+    td {
+      white-space: nowrap;
+    }
+    
+    .grid-parent {
+      display: grid;
+      grid-template-columns: 1fr 1fr
+    }
+
+    .columns {
+      column-count: 10;
+    }
+
+    .text_ID {
+      font-size: 12pt;
+      color: blue;
+    }
+
+    .score {
+      font-size: 12pt;
+      color: black;
+      font-weight: bold;
+    }
+
+    .cat_info {
+      font-size: 12pt;
+      color: gray;
+    }
+
+    mark {
+      padding: 0px;
+      background-color: rgb(255, 201, 14);
+    }
+
+    .text-wrap {
+      white-space: normal;
+    }
+
+    .width-200 {
+      width: 200px;
+    }
+  </style>
+  <title>WritEMe database -- STATISTICS</title>
+  <style type="text/css">
+    /* Chart.js */
+    @keyframes chartjs-render-animation {
+      from {
+        opacity: .99
+      }
+
+      to {
+        opacity: 1
+      }
+    }
+
+    .chartjs-render-monitor {
+      animation: chartjs-render-animation 1ms
+    }
+
+    .chartjs-size-monitor,
+    .chartjs-size-monitor-expand,
+    .chartjs-size-monitor-shrink {
+      position: absolute;
+      direction: ltr;
+      left: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      overflow: hidden;
+      pointer-events: none;
+      visibility: hidden;
+      z-index: -1
+    }
+
+    .chartjs-size-monitor-expand>div {
+      position: absolute;
+      width: 1000000px;
+      height: 1000000px;
+      left: 0;
+      top: 0
+    }
+
+    .chartjs-size-monitor-shrink>div {
+      position: absolute;
+      width: 200%;
+      height: 200%;
+      left: 0;
+      top: 0
+    }
+  </style>
+</head>
+<body>
+<p style="padding:0 15px 0 15px;"><b>Total input texts</b>:24</p>
+<p style="padding:0 15px 0 15px;"><b>Total texts without transliteration</b>:0</p>
+<p style="padding:0 15px 0 15px;"><b>Total texts without linguistic content</b>:0</p>
+<p style="padding:0 15px 0 15px;"><b>Total texts with linguistic content</b>:24</p>
+<p style="padding:0 15px 0 15px;"><b>Total lines</b>:256</p>
+<p style="padding:0 15px 0 15px;"><b>Total tokens</b>:826</p>
+<div class='parent inline-flex-parent'>
+  <div class='child'>
+    <table>
+<tr><th>Provenance</th><th>#</th>
+<tr><td style="padding:0 15px 0 15px;">Larsa  ?</td><td>18x</td></tr>
+<tr><td style="padding:0 15px 0 15px;">uncertain</td><td>6x</td></tr>
+</table>
+</div>
+<div class='child inline-block-child'>
+  <div id="container" style="width: 100%;">
+    <div class="chartjs-size-monitor">
+      <div class="chartjs-size-monitor-expand">
+        <div class=""></div>
+      </div>
+      <div class="chartjs-size-monitor-shrink">
+        <div class=""></div>
+      </div>
+    </div>
+    <canvas id="myChart" style="display: block; width: 900px; height: 600px;" class="chartjs-render-monitor" width="900" height="600"></canvas>
+  </div>
+
+  <script>
+    var ctx = document.getElementById('myChart').getContext('2d');
+    var gradientStroke = ctx.createLinearGradient(500, 0, 100, 0);
+    gradientStroke.addColorStop(0, '#80b6f4');
+    gradientStroke.addColorStop(1, '#f49080');
+
+    var myChart = new Chart(ctx, {
+      type: 'bar',
+      data: {
+        labels: ['Larsa  ?', 'uncertain'],
+    datasets: [{
+          label: '',
+          backgroundColor: gradientStroke,
+          borderColor: gradientStroke,
+          pointBorderColor: gradientStroke,
+          pointBackgroundColor: gradientStroke,
+          pointHoverBackgroundColor: gradientStroke,
+          pointHoverBorderColor: gradientStroke,
+          pointBorderWidth: 10,
+          pointHoverRadius: 10,
+          pointHoverBorderWidth: 1,
+          pointRadius: 3,
+          fill: false,
+          borderWidth: 14,
+          data: [18, 6],
+      }]
+      },
+      options: {
+        legend: {
+          display: false
+        },
+        tooltips: {
+          callbacks: {
+            label: function(tooltipItem) {
+              return tooltipItem.yLabel;
+            }
+          }
+        },
+        scales: {
+          xAxes: [{
+            ticks: {
+              beginAtZero: true
+            },
+            scaleLabel: {
+              display: true,
+              labelString: 'Provenance'
+            }
+          }],
+          yAxes: [{
+            ticks: {
+              beginAtZero: true,
+              callback: function(value) {
+                if (value % 1 === 0) {
+                  return value;
+                }
+              }
+            },
+            scaleLabel: {
+              display: true,
+              labelString: '# of texts'
+            }
+          }]
+        }
+      }
+    });
+  </script>
+  </div>
+</div><div class='parent inline-flex-parent'>
+  <div class='child'>
+    <table>
+<tr><th>Genre</th><th>#</th>
+<tr><td style="padding:0 15px 0 15px;">Administrative</td><td>24x</td></tr>
+</table>
+</div>
+<div class='child inline-block-child'>
+  <div id="container" style="width: 100%;">
+    <div class="chartjs-size-monitor">
+      <div class="chartjs-size-monitor-expand">
+        <div class=""></div>
+      </div>
+      <div class="chartjs-size-monitor-shrink">
+        <div class=""></div>
+      </div>
+    </div>
+    <canvas id="myChart2" style="display: block; width: 900px; height: 600px;" class="chartjs-render-monitor" width="900" height="600"></canvas>
+  </div>
+
+  <script>
+    var ctx = document.getElementById('myChart2').getContext('2d');
+    var gradientStroke = ctx.createLinearGradient(500, 0, 100, 0);
+    gradientStroke.addColorStop(0, '#80b6f4');
+    gradientStroke.addColorStop(1, '#f49080');
+
+    var myChart = new Chart(ctx, {
+      type: 'bar',
+      data: {
+        labels: ['Administrative'],
+    datasets: [{
+          label: '',
+          backgroundColor: gradientStroke,
+          borderColor: gradientStroke,
+          pointBorderColor: gradientStroke,
+          pointBackgroundColor: gradientStroke,
+          pointHoverBackgroundColor: gradientStroke,
+          pointHoverBorderColor: gradientStroke,
+          pointBorderWidth: 10,
+          pointHoverRadius: 10,
+          pointHoverBorderWidth: 1,
+          pointRadius: 3,
+          fill: false,
+          borderWidth: 14,
+          data: [24],
+      }]
+      },
+      options: {
+        legend: {
+          display: false
+        },
+        tooltips: {
+          callbacks: {
+            label: function(tooltipItem) {
+              return tooltipItem.yLabel;
+            }
+          }
+        },
+        scales: {
+          xAxes: [{
+            ticks: {
+              beginAtZero: true
+            },
+            scaleLabel: {
+              display: true,
+              labelString: 'Genre'
+            }
+          }],
+          yAxes: [{
+            ticks: {
+              beginAtZero: true,
+              callback: function(value) {
+                if (value % 1 === 0) {
+                  return value;
+                }
+              }
+            },
+            scaleLabel: {
+              display: true,
+              labelString: '# of texts'
+            }
+          }]
+        }
+      }
+    });
+  </script>
+  </div>
+</div><div class='parent inline-flex-parent'>
+  <div class='child'>
+    <table>
+<tr><th>Period</th><th>#</th>
+<tr><td style="padding:0 15px 0 15px;">Uruk III </td><td>24x</td></tr>
+</table>
+</div>
+<div class='child inline-block-child'>
+  <div id="container" style="width: 100%;">
+    <div class="chartjs-size-monitor">
+      <div class="chartjs-size-monitor-expand">
+        <div class=""></div>
+      </div>
+      <div class="chartjs-size-monitor-shrink">
+        <div class=""></div>
+      </div>
+    </div>
+    <canvas id="myChart3" style="display: block; width: 900px; height: 600px;" class="chartjs-render-monitor" width="900" height="600"></canvas>
+  </div>
+
+  <script>
+    var ctx = document.getElementById('myChart3').getContext('2d');
+    var gradientStroke = ctx.createLinearGradient(500, 0, 100, 0);
+    gradientStroke.addColorStop(0, '#80b6f4');
+    gradientStroke.addColorStop(1, '#f49080');
+
+    var myChart = new Chart(ctx, {
+      type: 'bar',
+      data: {
+        labels: ['Uruk III '],
+    datasets: [{
+          label: '',
+          backgroundColor: gradientStroke,
+          borderColor: gradientStroke,
+          pointBorderColor: gradientStroke,
+          pointBackgroundColor: gradientStroke,
+          pointHoverBackgroundColor: gradientStroke,
+          pointHoverBorderColor: gradientStroke,
+          pointBorderWidth: 10,
+          pointHoverRadius: 10,
+          pointHoverBorderWidth: 1,
+          pointRadius: 3,
+          fill: false,
+          borderWidth: 14,
+          data: [24],
+      }]
+      },
+      options: {
+        legend: {
+          display: false
+        },
+        tooltips: {
+          callbacks: {
+            label: function(tooltipItem) {
+              return tooltipItem.yLabel;
+            }
+          }
+        },
+        scales: {
+          xAxes: [{
+            ticks: {
+              beginAtZero: true
+            },
+            scaleLabel: {
+              display: true,
+              labelString: 'Period'
+            }
+          }],
+          yAxes: [{
+            ticks: {
+              beginAtZero: true,
+              callback: function(value) {
+                if (value % 1 === 0) {
+                  return value;
+                }
+              }
+            },
+            scaleLabel: {
+              display: true,
+              labelString: '# of texts'
+            }
+          }]
+        }
+      }
+    });
+  </script>
+  </div>
+</div><p><b>Texts processed</b>:<br>
+<div class ="columns">P005448<br>
+P005449<br>
+P005450<br>
+P005451<br>
+P005452<br>
+P005453<br>
+P005454<br>
+P005455<br>
+P005456<br>
+P005457<br>
+P005458<br>
+P005459<br>
+P005460<br>
+P005461<br>
+P005462<br>
+P005463<br>
+P005464<br>
+P005465<br>
+P005466<br>
+P005467<br>
+P005468<br>
+P005469<br>
+P005470<br>
+P005471<br>
+</div>
+</p>
+</body>
+</html>

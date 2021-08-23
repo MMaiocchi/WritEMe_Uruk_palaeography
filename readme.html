@@ -1,0 +1,142 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+
+<STYLE>
+html,body{
+  width: 90%;
+  height: 100%;
+}
+body {
+  font-family: Verdana, sans-serif;
+  font-size: 10.5pt;
+  line-height: 12pt;
+  overflow-y: auto;
+  overflow-x: auto;
+}
+p {
+    word-wrap: break-word;
+}
+div {
+  padding: 2em;
+}
+h1 {
+  text-align: center;
+  font-size:150%;
+}
+.middle {
+  align:center;
+  width:82%;
+  height:100%;
+}
+#sidebar {
+  top: 0;
+  bottom: 0;
+}
+.aParent {
+  background-color: #f7f5e7;
+  color: #000000;
+  text-decoration: none;
+  overflow: hidden;
+}
+.title {
+  background-color: #f7f5e7;
+  color: #000000;
+  font-weight: bold;
+  font-size: 17px;
+  padding: 14px 16px;
+  text-decoration: none;
+  overflow: hidden;
+  float: left;
+  width: 48%
+}
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: #f7f5e7;
+  overflow: hidden;
+  float: right;
+  width: 48%
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #000000;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #00fff7;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+/* Style the tab */
+   .tab {
+     overflow: hidden;
+     border: 1px solid #ccc;
+     background-color: #f1f1f1;
+   }
+
+   /* Style the buttons inside the tab */
+   .tab button {
+     background-color: inherit;
+     float: left;
+     border: none;
+     outline: none;
+     cursor: pointer;
+     padding: 14px 16px;
+     transition: 0.3s;
+     font-size: 17px;
+   }
+
+   /* Change background color of buttons on hover */
+   .tab button:hover {
+     background-color: #ddd;
+   }
+
+   /* Create an active/current tablink class */
+   .tab button.active {
+     background-color: #ccc;
+   }
+
+   /* Style the tab content */
+   .tabcontent {
+     display: none;
+     padding: 6px 12px;
+     border: 1px solid #ccc;
+     border-top: none;
+   }
+</STYLE>
+<title>WritEMe archaic texts graphemic database -- README</title>
+</head>
+<body>
+<div class ="left">
+<p>To start exploring the database, please visit the <a href = "db_container.html">database</a> section and click on an item on the left panel. Information on the individual textual tokens is displayed in the main panel on the right. This is arranged in 5 tabs, namely:
+  <div class="tab">
+    <button class="tablinks" onclick="openCity(event, 'Sign_data')" id="defaultOpen">Sign data</button>
+    <button class="tablinks" onclick="openCity(event, 'Translit_data')">Transliteration data</button>
+    <button class="tablinks" onclick="openCity(event, 'Variations')">Variations</button>
+    <button class="tablinks" onclick="openCity(event, 'Cluster_data1')">Cluster_data (1)</button>
+    <button class="tablinks" onclick="openCity(event, 'Cluster_data2')">Cluster_data (2)</button>
+  </div>
+<ul>
+  <li><b>Sign data</b>: this tab contains frequency data attached to the token being browsed.</b></li>
+  <li><b>Transliteration data</b>: this tab lists line(s) of text where the token occurs.</li>
+  <li><b>Variations</b>: this tab lists the variation patters attached to the individual textual tokens. Consider two tokens, X and Y, each having variants ~a and ~b. In such scenario, four variations are possible, namely:<p style ="margin-left: 40px;">X~a Y~a<br>X~a Y~b<br> X~b Y~a<br>X~b Y~b</li></p>Variations are key in order to understand whether or not two variants represent in fact the same sign.
+  <li><b>Cluster data(1)</b>: a cluster is defined here as the set of all signs in a given line arranged alphabetically. Note that brakes within lines are ignored, which may lead to artificial conflation of clusters. For instance, the following input strings are considered identical in terms of cluster formation:<p style ="margin-left: 40px;">[...] X Y<br>X [...] Y<br>X Y [...]<br>X Y</p> Philological competence is required to disentangle the matter. In addition, numbers are also ignored: "1 X Y" is reduced to "X Y" while processing, thus avoiding possible variantions with "2 X Y", "3 X Y", etc. which are unwanted here.</li>
+  <li><b>Cluster data(2)</b>: same as cluster data (1), except that token variations are ignored (X~a and X~b are considered identical). The order is again alphabetical.</li>
+</ul>
+</p>
+</div>
+</body>
+</html>

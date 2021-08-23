@@ -1,0 +1,87 @@
+﻿
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+
+  <STYLE>
+    html,
+    body {
+      width: 100%;
+      height: 100%;
+    }
+
+    body {
+      font-family: Verdana, sans-serif;
+      font-size: 10.5pt;
+      line-height: 12pt;
+    }
+    p {
+    word-wrap: break-word;
+    }
+    div {
+      padding: 2em;
+    }
+    #main {
+        margin: 0 auto;
+        overflow: hidden;
+
+    }
+    #leftside    {
+        width: 350px;
+        float: left;
+        padding: 1em;
+    }
+    #rightside  {
+        width: 750px;
+        margin-left: 400px;
+        padding: 1em;
+
+    }
+    .rightbreak {
+      word-wrap: break-word;
+      text-align: justify;
+      margin-right: 40px;
+      padding: 1em;
+    }
+    figure {
+      text-align: justify;
+      font-style: italic;
+      font-size: smaller;
+      text-indent: 0;
+      border: thin silver solid;
+      margin: 0.5em;
+      padding: 0.5em;
+    }
+
+  </STYLE>
+  <title>WritEMe archaic texts graphemic database -- MAIN PAGE</title>
+</head>
+
+<body>
+
+  <div id="main">
+    <div id="leftside">
+      <figure>
+        <img src="images\Uruk_text_sample.jpg" alt="archaic cuneiform text"/>
+        <figcaption>An archaic cuneiform text from southern Mesopotamia dated to the Uruk III period (ca. 3200-3000 BC). The fourth box of the second column (highlighted in yellow) features the signs SANGA~a and DUB~a, which in later time refer to scribal tools. In this tablet, their combination refers to the office
+          of the scribe. See this text on <a href="https://cdli.ucla.edu/P006376" target="_blank">CDLI</a>.</figcaption>
+      </figure>
+    </div>
+    <div id="rightside" class ="rightbreak">
+      <p>This site hosts a database for the study of the archaic cuneiform texts from the late Uruk period (late fourth - beginning third millennia BCE). The aim of this tool is to help in the graphemic analysis of the earliest cuneiform texts presently known.</p>
+      <p>Due to their great antiquity, these texts are exceedingly difficult to understand. Pioneering contributions in this regards have been made by Englund and Nissen among others.
+      <p>As it stands, the database must be considered as a working prototype. With respect to palaeography, the image repertoire is incomplete: only a few signs which are relevant to the <a href="https://writeme.hypotheses.org/"
+          target="_blank">WriteMe</a> project received a full treatment (ex.: <a href="DUB~a_dataPage.html" target="middle">DUB~a</a> and variants). Poorly readable or broken signs are also ignored.</p>
+      <p>The most innovative feature is the tab showing the variation patterns of the individual tokens listed on the left panel. Such tab gather useful information for deciding whether or not two variants belong to the same sign (ex.: DUB~a and
+        DUB~b).
+      <p>For further information on how to use this database please refer to the <a href="readme.html" target="middle">README</a> section.</p>
+      <p>All input data are from the <b>Cuneiform Digital Library Initiative</b> project (<a href="https://cdli.ucla.edu/" target="_blank">CDLI</a>).No effort has been made to fix minor inconsistencies in the transliterations, which may result in
+        glitches during the tokenization step.</p>
+      <p>The database rests on dedicated scripts for the processing of CDLI transliterations. The scripts analyse input data, create the database structure and populate it. Source code on Github.</p>
+    </div>
+  </div>
+</body>
+
+</html>
