@@ -1,53 +1,39 @@
 
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="utf-8" />
-  <STYLE>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+    <meta charset="utf-8"/>
+    <STYLE>
     body {
       font-family: "Times New Roman";
       font-size: 10.5pt;
       line-height: 12pt;
       margin: 0;
     }
-
     h1 {
       text-align: center;
-      font-size: 150%;
+      font-size:150%;
     }
-
     .tbl {
-      border: 1px solid;
+        border:1px solid;
     }
-
     .tbl tr td {
       border: 1px solid;
     }
-
-    .tbl tr:nth-child(2n+1) {
-      background-color: #ffffff;
-    }
-
-    .tbl tr:nth-child(2n+0) {
-      background-color: #f9f7ec;
-    }
-
+    .tbl tr:nth-child(2n+1) {   background-color: #ffffff; }
+    .tbl tr:nth-child(2n+0) {   background-color: #f9f7ec; }
     .plain_tbl {
-      border: none;
-      background-color: #ffffff;
+        border: none;
+        background-color:#ffffff;
     }
-
     .plain_tbl tr td {
       border: none;
-      background-color: #ffffff;
+      background-color:#ffffff;
       vertical-align: middle;
     }
-
     div {
-      margin-right: 10px;
+      	margin-right: 10px;
     }
-
     img {
       width: 125px;
       height: auto;
@@ -61,14 +47,14 @@
     p {
       word-wrap: break-word;
     }
-
+    
     /* Style the tab */
     .tab {
       overflow: hidden;
       border: 1px solid #ccc;
       background-color: #f1f1f1;
     }
-
+    
     /* Style the buttons inside the tab */
     .tab button {
       background-color: inherit;
@@ -80,17 +66,17 @@
       transition: 0.3s;
       font-size: 17px;
     }
-
+    
     /* Change background color of buttons on hover */
     .tab button:hover {
       background-color: #ddd;
     }
-
+    
     /* Create an active/current tablink class */
     .tab button.active {
       background-color: #ccc;
     }
-
+    
     /* Style the tab content */
     .tabcontent {
       display: none;
@@ -98,7 +84,7 @@
       border: 1px solid #ccc;
       border-top: none;
     }
-
+    
     .wrapper {
       display: grid;
       grid-template-columns: repeat(7, 1fr);
@@ -106,53 +92,712 @@
       grid-row-gap: 10px;
     }
 
-    .wrapper>div img {
+    .wrapper > div img {
       max-width: 100%;
     }
-  </STYLE>
-  <title>Archaic Mesopotamia Palaeography Database - DI</title>
-</head>
 
-<body>
+    </STYLE>
+    <title>WritEMe palaeography database -DI_dataPAGE</title>
+    </head>
+    <body>
   <div class="tab">
-    <button class="tablinks" onclick="(event, 'Sign_data')" id="defaultOpen">Sign data</button>
-    <button class="tablinks" onclick="openTab(event, 'Translit_data')">Transliteration data</button>
-    <button class="tablinks" onclick="openTab(event, 'Variations')">Variations</button>
-    <button class="tablinks" onclick="openTab(event, 'Cluster_data1')">Cluster_data (1)</button>
-    <button class="tablinks" onclick="openTab(event, 'Cluster_data2')">Cluster_data (2)</button>
-
+    <button class="tablinks" onclick="openCity(event, 'Sign_data')" id="defaultOpen">Sign data</button>
+    <button class="tablinks" onclick="openCity(event, 'Translit_data')">Transliteration data</button>
+    <button class="tablinks" onclick="openCity(event, 'Variations')">Variations</button>
+    <button class="tablinks" onclick="openCity(event, 'Cluster_data1')">Cluster_data (1)</button>
+    <button class="tablinks" onclick="openCity(event, 'Cluster_data2')">Cluster_data (2)</button>
+    
   </div>
 
-  <div id="Sign_data" class="tabcontent">
-    <div>
+    <div id="Sign_data" class="tabcontent">
+      <div>
       <h1>DI</h1>
-    </div>
-    <div>
-      <p><b>Frequency data</b>:
-      <table>
-        			<tr><td style="width:20%">Administrative:</td><td style="width:80%"> 2x</td></tr>
-			<tr><td style="width:20%">Total freq.:</td><td style="width:80%">2x</td></tr>
+      </div>
+      <div>
+        <p><b>Frequency data</b>:
+        <table>
+			<tr><td style="width:20%">Administrative:</td><td style="width:80%"> 93x</td></tr>
+			<tr><td style="width:20%">Lexical:</td><td style="width:80%"> 37x</td></tr>
+			<tr><td style="width:20%">Total freq.:</td><td style="width:80%">130x</td></tr>
+		</table>
+		</p></div><br>
+	<div><b>Related graphemes</b>:
+<p><a href="data\ZATU737+DI_dataPage.html" target="middle">|ZATU737+DI|</a>,<a href="data\ZATU737xDI_dataPage.html" target="middle">|ZATU737xDI|</a>	</p></div><br>
 
-      </table>
-      </p>
-    </div>
-    <br>
-    <div></div>
-    <br>
-  </div>
+	</div>
 
-
-  	</div>
-
-
-  <div id="Translit_data" class="tabcontent">
-    <table class="tbl">
-      <tr>
-        <th>freq.</th>
-        <th>transliteration</th>
-        <th>reference</th>
-      </tr>
-      			<tr>
+      <div id="Translit_data" class="tabcontent">
+		<table class="tbl">
+			<tr>
+				<th>freq.</th>
+				<th>transliteration</th>
+				<th>reference</th>
+			</tr>
+			<tr>
+				<td>20</td>
+				<td>1(N01) , NAM2 DI</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Lex.: <a href="https://cdli.ucla.edu/P000006" target ="_blank">P000006 obv.1.6</a></td>
+						</tr>						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Lex.: <a href="https://cdli.ucla.edu/P000011" target ="_blank">P000011 obv.1.1'</a></td>
+						</tr>						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Lex.: <a href="https://cdli.ucla.edu/P000071" target ="_blank">P000071 obv.1.3</a></td>
+						</tr>						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Lex.: <a href="https://cdli.ucla.edu/P000161" target ="_blank">P000161 obv.1.3</a></td>
+						</tr>						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Lex.: <a href="https://cdli.ucla.edu/P000179" target ="_blank">P000179 obv.1.3</a></td>
+						</tr>						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Lex.: <a href="https://cdli.ucla.edu/P000234" target ="_blank">P000234 obv.1.3</a></td>
+						</tr>						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Lex.: <a href="https://cdli.ucla.edu/P000247" target ="_blank">P000247 obv.1.3</a></td>
+						</tr>						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Lex.: <a href="https://cdli.ucla.edu/P000264" target ="_blank">P000264 obv.1.3</a></td>
+						</tr>						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Lex.: <a href="https://cdli.ucla.edu/P000345" target ="_blank">P000345 obv.1.3</a></td>
+						</tr>						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Lex.: <a href="https://cdli.ucla.edu/P000589" target ="_blank">P000589 obv.1.3</a></td>
+						</tr>						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Lex.: <a href="https://cdli.ucla.edu/P000601" target ="_blank">P000601 obv.1.3</a></td>
+						</tr>						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Lex.: <a href="https://cdli.ucla.edu/P000636" target ="_blank">P000636 obv.1.1'</a></td>
+						</tr>						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Lex.: <a href="https://cdli.ucla.edu/P006042" target ="_blank">P006042 obv.1.3</a></td>
+						</tr>						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Lex.: <a href="https://cdli.ucla.edu/P006043" target ="_blank">P006043 obv.1.3</a></td>
+						</tr>						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Lex.: <a href="https://cdli.ucla.edu/P006044" target ="_blank">P006044 obv.1.3</a></td>
+						</tr>						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Lex.: <a href="https://cdli.ucla.edu/P006045" target ="_blank">P006045 obv.1.3</a></td>
+						</tr>						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Lex.: <a href="https://cdli.ucla.edu/P006181" target ="_blank">P006181 obv.1.3</a></td>
+						</tr>						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Lex.: <a href="https://cdli.ucla.edu/P006211" target ="_blank">P006211 obv.1.3</a></td>
+						</tr>						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Lex.: <a href="https://cdli.ucla.edu/P006275" target ="_blank">P006275 obv.1.3</a></td>
+						</tr>						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Lex.: <a href="https://cdli.ucla.edu/P253777" target ="_blank">P253777 obv.1.3</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>4</td>
+				<td>, GIR3@g~b DI</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P005162" target ="_blank">P005162 obv.2.6</a></td>
+						</tr>						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P005163" target ="_blank">P005163 obv.3.9</a></td>
+						</tr>						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P005166" target ="_blank">P005166 rev.1.4</a></td>
+						</tr>						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P005221" target ="_blank">P005221 obv.2.4</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>4</td>
+				<td>[1(N01)] , NAM2 DI</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Lex.: <a href="https://cdli.ucla.edu/P000472" target ="_blank">P000472 obv.1.3</a></td>
+						</tr>						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Lex.: <a href="https://cdli.ucla.edu/P000542" target ="_blank">P000542 obv.1.3</a></td>
+						</tr>						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Lex.: <a href="https://cdli.ucla.edu/P000572" target ="_blank">P000572 obv.1.1'</a></td>
+						</tr>						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Lex.: <a href="https://cdli.ucla.edu/P000606" target ="_blank">P000606 obv.1.1'</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>3</td>
+				<td>1(N01) , DI</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P001236" target ="_blank">P001236 obv.1.4</a></td>
+						</tr>						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P006174" target ="_blank">P006174 obv.1.5</a></td>
+						</tr>						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P387736" target ="_blank">P387736 obv.5.a</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>3</td>
+				<td>[...] , DI [...]</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P002245" target ="_blank">P002245 obv.1.1</a></td>
+						</tr>						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P003707" target ="_blank">P003707 obv.2.5</a></td>
+						</tr>						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P004959" target ="_blank">P004959 obv.1.1</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>2</td>
+				<td>1(N01) , [...] DI</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Lex.: <a href="https://cdli.ucla.edu/P000159" target ="_blank">P000159 obv.1.3</a></td>
+						</tr>						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Lex.: <a href="https://cdli.ucla.edu/P000210" target ="_blank">P000210 obv.1.3</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>2</td>
+				<td>[1(N01)] , [...] DI</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Lex.: <a href="https://cdli.ucla.edu/P000237" target ="_blank">P000237 obv.1.3</a></td>
+						</tr>						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Lex.: <a href="https://cdli.ucla.edu/P000492" target ="_blank">P000492 obv.1'.2</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>, (NAB DI |BU~a+DU6~a|)a</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P004735" target ="_blank">P004735 obv.2.1.b1B1</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>, (NAB DI)a</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P006218" target ="_blank">P006218 obv.1.1.b2B</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>, AN UR5~a A 3(N57) NAM2 DI 1(N57) BA</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P006130" target ="_blank">P006130 obv.2.2</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>, DI</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P001157" target ="_blank">P001157 obv.2.1</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>, DI NAM2</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P005163" target ="_blank">P005163 obv.2.10</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>, DI RAD~a</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P006144" target ="_blank">P006144 obv.2.6</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>, DI SAG</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P325957" target ="_blank">P325957 obv.1.2</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>, KALAM~h DI</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P325957" target ="_blank">P325957 obv.1.3</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>, NAB DI X [...]</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P005428" target ="_blank">P005428 rev.5.1</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>, NAB DI |E2~ax1(N57)@t| BAPPIR~a GIBIL</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P003529" target ="_blank">P003529 obv.2.3.b1B</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>, NIN NAB DI</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P387752" target ="_blank">P387752 obv.1.b1.b01</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>, NI~a SZE~a@t AN DI RAD~a</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P006082" target ="_blank">P006082 obv.1.2</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>, SU~a NAB DI |E2~ax1(N57)@t|</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P003654" target ="_blank">P003654 obv.4.7.b</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>, TU~a NAB DI</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P006119" target ="_blank">P006119 obv.1.1.b</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>, UB DI RAD~a</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P006400" target ="_blank">P006400 obv.1.3</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>1(N01) , 1(N57) BARA2~a NAB DI</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P003623" target ="_blank">P003623 obv.2.2.a</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>1(N01) , AN HI DI PAP~a</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P005378" target ="_blank">P005378 obv.1.3</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>1(N01) , DI E2~b</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Lex.: <a href="https://cdli.ucla.edu/P000649" target ="_blank">P000649 obv.2'.3'</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>1(N01) , DI GIR3@g~b PAP~a</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P005088" target ="_blank">P005088 obv.2.1</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>1(N01) , DI NAM2</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P001459" target ="_blank">P001459 obv.1.3</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>1(N01) , DI NAM2 KI</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Lex.: <a href="https://cdli.ucla.edu/P000249" target ="_blank">P000249 obv.3.3'</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>1(N01) , DI X</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P001332" target ="_blank">P001332 obv.1.5</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>1(N01) , DI ZATU751~a</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Lex.: <a href="https://cdli.ucla.edu/P000317" target ="_blank">P000317 obv.3'.5'</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>1(N01) , DI [...]</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Lex.: <a href="https://cdli.ucla.edu/P000308" target ="_blank">P000308 obv.2'.4'</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>1(N01) , DUB~b SAL DI LAL2~a</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P001044" target ="_blank">P001044 obv.1.1</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>1(N01) , KASZ~b DI GIR3@g~b</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P005132" target ="_blank">P005132 obv.1.1</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>1(N01) , NAM2 DI SZITA~a1</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P005179" target ="_blank">P005179 obv.3.2</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>1(N01) , NAM2 DI X [...] 2.b3. 1(N01) , X [...]</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P002819" target ="_blank">P002819 obv.2.2.b2</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>1(N01) , SUKKAL NAB DI |E2~bx1(N57)@t|</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P004447" target ="_blank">P004447 obv.2.2</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>1(N01) , SZESZ~b DI</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P001429" target ="_blank">P001429 obv.2.3</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>1(N01) , SZU2 PIRIG~b1 GIR3~c SZU AN DI</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P004754" target ="_blank">P004754 obv.1.2.a</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>1(N01) , SZUM NU@g DI</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P005475" target ="_blank">P005475 obv.1.3</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>1(N01) , UDU~a |U4x1(N01)| DI [GIR3@g~b]</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P005213" target ="_blank">P005213 rev.2.4</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>1(N01) , X DI [...]</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P001123" target ="_blank">P001123 obv.2.2</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>1(N01) , ZATU647 GISZ DI PAP~a</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P003655" target ="_blank">P003655 obv.3.5</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>1(N01) , |E2~ax1(N57)@t| NAB DI</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P006394" target ="_blank">P006394 obv.2.4</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>1(N01@f) 1(N24@f) , SA~c SAL DI</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P005334" target ="_blank">P005334 obv.2.5</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>1(N14) , DI HI E2~a LU2 TUN3~a NUN~a</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P003807" target ="_blank">P003807 obv.1.3</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
 				<td>1</td>
 				<td>1(N14) , NAB DI</td>
 				<td>
@@ -161,6 +806,66 @@
 							<td>[---NO IMAGE---]
 							</td>
 							<td>Adm.: <a href="https://cdli.ucla.edu/P005456" target ="_blank">P005456 obv.2.6</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>1(N14) [...] , RAD~a DI [...]</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P006107" target ="_blank">P006107 obv.1.5</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>1(N34) 1(N14) , DI RAD~a</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P006383" target ="_blank">P006383 rev.2.2</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>1(N34) 1(N14) 2(N01) [...] , UDU~a ZATU705 DI</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P001159" target ="_blank">P001159 obv.1.2</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>1(N34) 3(N14) , SZE~a GI KI DI GIR3@g~b</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P005089" target ="_blank">P005089 obv.3.1</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>1(N42~a) , EN~a DI</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P005144" target ="_blank">P005144 obv.2.6</a></td>
 						</tr>					</table>
 				</td>
 			</tr>
@@ -176,45 +881,1508 @@
 						</tr>					</table>
 				</td>
 			</tr>
+			<tr>
+				<td>1</td>
+				<td>2(N01) , DI RAD~a</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P006047" target ="_blank">P006047 obv.2.5</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>2(N01) , MASZ SAL NAM2 DI GURUSZDA UNUG~a</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P001204" target ="_blank">P001204 obv.1.1</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>2(N01) , MASZ2 DI RAD~a</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P006086" target ="_blank">P006086 obv.2.3</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>2(N01) , NAM2 DI</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P002530" target ="_blank">P002530 obv.1.4</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>2(N01) , UD5~a DI A</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P006082" target ="_blank">P006082 rev.1.1</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>2(N14) 2(N01) , UDU~a DI RAD~a</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P006144" target ="_blank">P006144 rev.1.2</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>2(N34) , DI RAD~a</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P006198" target ="_blank">P006198 obv.2.1</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>3(N01) , AN UR5~a NAM2 DI</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P006383" target ="_blank">P006383 rev.2.4</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>3(N01) , DI</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P001415" target ="_blank">P001415 obv.3.1</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>3(N01) , DI BAR AK~a</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P004778" target ="_blank">P004778 obv.3.5</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>3(N01) , PA~a DI AD~a</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P006177" target ="_blank">P006177 obv.4.10</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>3(N01) , RAD~a DI</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P006066" target ="_blank">P006066 obv.1.3</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>3(N14) , SA~c DI</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P001747" target ="_blank">P001747 obv.3.6</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>3(N19) , DI GAL~a</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P325238" target ="_blank">P325238 obv.1.5.c</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>3(N50) [...] 1(N14) 1(N01) , |SZE~a&SZE~a| BA [GAN2] NAM2 DI</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P005068" target ="_blank">P005068 obv.1.3.a</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>4(N01) , NAM2 DI UDU~a SZITA~a1</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P004501" target ="_blank">P004501 obv.1.1.a</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>4(N01) , ZATU659 X DI ZATU795</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P006054" target ="_blank">P006054 rev.1.6.a</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>4(N14) , NAM2 [DI]</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P001425" target ="_blank">P001425 obv.1.3</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>4(N34) 5(N14) , 1(N57) NAM2 DI</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P005069" target ="_blank">P005069 obv.3.a1</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>5(N01) , DI</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P001231" target ="_blank">P001231 obv.2.1</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>5(N01) , DI GIR3@g~b</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P005088" target ="_blank">P005088 obv.1.1</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>5(N01) , EN~a PA~a DI</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P006240" target ="_blank">P006240 obv.2.2.a</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>5(N01) , NAM2 DI [...]</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P002715" target ="_blank">P002715 obv.2.4.a</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>5(N34) , 1(N57) NAM2 [DI]</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P005072" target ="_blank">P005072 obv.4.a1</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>5(N34) , SZITA~a1 DI</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P005256" target ="_blank">P005256 obv.1.2</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>5(N34) 5(N14) 4(N01) , 1(N57) NAM2 DI</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P005071" target ="_blank">P005071 obv.3.a1</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>6(N01) , URUDU~a DI</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P002195" target ="_blank">P002195 obv.2.5</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>7(N01) 1(N08) , MUN~a1 DI</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P001706" target ="_blank">P001706 obv.1.3</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>9(N01) , KA~a RAD~a DI</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P006107" target ="_blank">P006107 obv.1.2</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>DI ZATU751~a</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Lex.: <a href="https://cdli.ucla.edu/P471692" target ="_blank">P471692 @surface a.80</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>NAM2 DI</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Lex.: <a href="https://cdli.ucla.edu/P464118" target ="_blank">P464118 @surface a.3</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>[...] , GU7 NAM2 DI GIBIL X [...]</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P002635" target ="_blank">P002635 obv.1.1</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>[...] , [...] DI X RAD~a</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P006128" target ="_blank">P006128 obv.2.1</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>[...] , [...] DI ZATU625</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P003964" target ="_blank">P003964 obv.1.2</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>[...] , [...] X DI NUN~a</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P003655" target ="_blank">P003655 obv.7.10</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>[...] , [...] |TUG2~a.(BAD&BAD)| DI</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P004074" target ="_blank">P004074 obv.1.2</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>[...] , |GA2~a2xGU4| EN~a IB~a EN~a DI KA~a</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P003762" target ="_blank">P003762 obv.2.1</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>[...] 1(N01) , IM~a DI</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P002882" target ="_blank">P002882 obv.1.1</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>[...] 1(N01) , RAD~a DI NI~a</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P006066" target ="_blank">P006066 obv.2.1</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>[...] 1(N01) , [...] DI</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P005017" target ="_blank">P005017 obv.2.1</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>[...] 3(N01) , NAM2 DI GI4~b</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P001472" target ="_blank">P001472 obv.1.1</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>[...] 9(N01) , NA~a AN DI AN</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P006283" target ="_blank">P006283 obv.1.4</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>[1(N01)] , X DI [...]</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Lex.: <a href="https://cdli.ucla.edu/P000649" target ="_blank">P000649 obv.1'.1'</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>[1(N01)] , [...] X DI</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Lex.: <a href="https://cdli.ucla.edu/P000421" target ="_blank">P000421 obv.1'.3'</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>[1(N01)] , [UDU~a] |U4xX| DI GIR3@g~b</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P005217" target ="_blank">P005217 rev.2.5</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>[1(N34) 4(N14) 2(N01)] , [1(N57)] NAM2 DI</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P005070" target ="_blank">P005070 obv.5.a1</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>[N] , [...] ZATU766 ZATU636 DI NA~c A2 [...]</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Lex.: <a href="https://cdli.ucla.edu/P000121" target ="_blank">P000121 rev.3.1</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
 		</table>
 </div>
 
-    </table>
-  </div>
-
-
-  <div id="Variations" class="tabcontent">
-    <table class="tbl">
-      <tr>
-        <th>rank</th>
-        <th>variations</th>
-        <th>reference</th>
-      </tr>
-      			<tr>
+      <div id="Variations" class="tabcontent">
+		<table class="tbl">
+			<tr>
+				<th>rank</th>
+				<th>variations</th>
+				<th>reference</th>
+			</tr>
+			<tr>
 				<td>-</td>
 				<td>[NO VARIATIONS]</td>
 				<td>-</td>
 			</tr>
+		</table>
+</div>
 
-    </table>
-  </div>
-
-  <div id="Cluster_data1" class="tabcontent">
-    <table class="tbl">
-      <tr>
-        <th>freq.</th>
-        <th>cluster</th>
-        <th>reference</th>
-      </tr>
-      			<tr>
-				<td>1</td>
+      <div id="Cluster_data1" class="tabcontent">
+		<table class="tbl">
+			<tr>
+				<th>freq.</th>
+				<th>cluster</th>
+				<th>reference</th>
+			</tr>
+			<tr>
+				<td>28</td>
+				<td>DI NAM2</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Lex.: <a href="https://cdli.ucla.edu/P000006" target ="_blank">P000006 obv.1.6</a></td>
+						</tr>						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Lex.: <a href="https://cdli.ucla.edu/P000011" target ="_blank">P000011 obv.1.1'</a></td>
+						</tr>						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Lex.: <a href="https://cdli.ucla.edu/P000071" target ="_blank">P000071 obv.1.3</a></td>
+						</tr>						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Lex.: <a href="https://cdli.ucla.edu/P000161" target ="_blank">P000161 obv.1.3</a></td>
+						</tr>						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Lex.: <a href="https://cdli.ucla.edu/P000179" target ="_blank">P000179 obv.1.3</a></td>
+						</tr>						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Lex.: <a href="https://cdli.ucla.edu/P000234" target ="_blank">P000234 obv.1.3</a></td>
+						</tr>						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Lex.: <a href="https://cdli.ucla.edu/P000247" target ="_blank">P000247 obv.1.3</a></td>
+						</tr>						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Lex.: <a href="https://cdli.ucla.edu/P000264" target ="_blank">P000264 obv.1.3</a></td>
+						</tr>						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Lex.: <a href="https://cdli.ucla.edu/P000345" target ="_blank">P000345 obv.1.3</a></td>
+						</tr>						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Lex.: <a href="https://cdli.ucla.edu/P000589" target ="_blank">P000589 obv.1.3</a></td>
+						</tr>						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Lex.: <a href="https://cdli.ucla.edu/P000601" target ="_blank">P000601 obv.1.3</a></td>
+						</tr>						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Lex.: <a href="https://cdli.ucla.edu/P000636" target ="_blank">P000636 obv.1.1'</a></td>
+						</tr>						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P001459" target ="_blank">P001459 obv.1.3</a></td>
+						</tr>						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P002530" target ="_blank">P002530 obv.1.4</a></td>
+						</tr>						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P002715" target ="_blank">P002715 obv.2.4.a</a></td>
+						</tr>						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P002819" target ="_blank">P002819 obv.2.2.b2</a></td>
+						</tr>						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P005069" target ="_blank">P005069 obv.3.a1</a></td>
+						</tr>						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P005071" target ="_blank">P005071 obv.3.a1</a></td>
+						</tr>						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P005163" target ="_blank">P005163 obv.2.10</a></td>
+						</tr>						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Lex.: <a href="https://cdli.ucla.edu/P006042" target ="_blank">P006042 obv.1.3</a></td>
+						</tr>						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Lex.: <a href="https://cdli.ucla.edu/P006043" target ="_blank">P006043 obv.1.3</a></td>
+						</tr>						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Lex.: <a href="https://cdli.ucla.edu/P006044" target ="_blank">P006044 obv.1.3</a></td>
+						</tr>						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Lex.: <a href="https://cdli.ucla.edu/P006045" target ="_blank">P006045 obv.1.3</a></td>
+						</tr>						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Lex.: <a href="https://cdli.ucla.edu/P006181" target ="_blank">P006181 obv.1.3</a></td>
+						</tr>						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Lex.: <a href="https://cdli.ucla.edu/P006211" target ="_blank">P006211 obv.1.3</a></td>
+						</tr>						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Lex.: <a href="https://cdli.ucla.edu/P006275" target ="_blank">P006275 obv.1.3</a></td>
+						</tr>						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Lex.: <a href="https://cdli.ucla.edu/P253777" target ="_blank">P253777 obv.1.3</a></td>
+						</tr>						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Lex.: <a href="https://cdli.ucla.edu/P464118" target ="_blank">P464118 @surface a.3</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>7</td>
+				<td>DI RAD~a</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P006047" target ="_blank">P006047 obv.2.5</a></td>
+						</tr>						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P006066" target ="_blank">P006066 obv.1.3</a></td>
+						</tr>						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P006107" target ="_blank">P006107 obv.1.5</a></td>
+						</tr>						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P006128" target ="_blank">P006128 obv.2.1</a></td>
+						</tr>						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P006144" target ="_blank">P006144 obv.2.6</a></td>
+						</tr>						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P006198" target ="_blank">P006198 obv.2.1</a></td>
+						</tr>						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P006383" target ="_blank">P006383 rev.2.2</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>5</td>
+				<td>DI GIR3@g~b</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P005088" target ="_blank">P005088 obv.1.1</a></td>
+						</tr>						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P005162" target ="_blank">P005162 obv.2.6</a></td>
+						</tr>						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P005163" target ="_blank">P005163 obv.3.9</a></td>
+						</tr>						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P005166" target ="_blank">P005166 rev.1.4</a></td>
+						</tr>						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P005221" target ="_blank">P005221 obv.2.4</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>4</td>
+				<td>DI NAM2 [1(N01)]</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Lex.: <a href="https://cdli.ucla.edu/P000472" target ="_blank">P000472 obv.1.3</a></td>
+						</tr>						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Lex.: <a href="https://cdli.ucla.edu/P000542" target ="_blank">P000542 obv.1.3</a></td>
+						</tr>						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Lex.: <a href="https://cdli.ucla.edu/P000572" target ="_blank">P000572 obv.1.1'</a></td>
+						</tr>						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Lex.: <a href="https://cdli.ucla.edu/P000606" target ="_blank">P000606 obv.1.1'</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>4</td>
+				<td>DI [1(N01)]</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Lex.: <a href="https://cdli.ucla.edu/P000237" target ="_blank">P000237 obv.1.3</a></td>
+						</tr>						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Lex.: <a href="https://cdli.ucla.edu/P000421" target ="_blank">P000421 obv.1'.3'</a></td>
+						</tr>						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Lex.: <a href="https://cdli.ucla.edu/P000492" target ="_blank">P000492 obv.1'.2</a></td>
+						</tr>						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Lex.: <a href="https://cdli.ucla.edu/P000649" target ="_blank">P000649 obv.1'.1'</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>2</td>
 				<td>DI NAB</td>
 				<td>
 					<table border=0 class="plain_tbl">
 						<tr>
 							<td>[---NO IMAGE---]
 							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P005428" target ="_blank">P005428 rev.5.1</a></td>
+						</tr>						<tr>
+							<td>[---NO IMAGE---]
+							</td>
 							<td>Adm.: <a href="https://cdli.ucla.edu/P005456" target ="_blank">P005456 obv.2.6</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>2</td>
+				<td>DI ZATU751~a</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Lex.: <a href="https://cdli.ucla.edu/P000317" target ="_blank">P000317 obv.3'.5'</a></td>
+						</tr>						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Lex.: <a href="https://cdli.ucla.edu/P471692" target ="_blank">P471692 @surface a.80</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>2</td>
+				<td>NAM2 [DI]</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P001425" target ="_blank">P001425 obv.1.3</a></td>
+						</tr>						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P005072" target ="_blank">P005072 obv.4.a1</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>(NAB DI |BU~a+DU6~a|)a</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P004735" target ="_blank">P004735 obv.2.1.b1B1</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>(NAB DI)a</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P006218" target ="_blank">P006218 obv.1.1.b2B</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>A AN BA DI NAM2 UR5~a</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P006130" target ="_blank">P006130 obv.2.2</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>A DI UD5~a</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P006082" target ="_blank">P006082 rev.1.1</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>A2 DI NA~c ZATU636 ZATU766 [N]</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Lex.: <a href="https://cdli.ucla.edu/P000121" target ="_blank">P000121 rev.3.1</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>AD~a DI PA~a</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P006177" target ="_blank">P006177 obv.4.10</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>AK~a BAR DI</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P004778" target ="_blank">P004778 obv.3.5</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>AN DI GIR3~c PIRIG~b1 SZU SZU2</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P004754" target ="_blank">P004754 obv.1.2.a</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>AN DI HI PAP~a</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P005378" target ="_blank">P005378 obv.1.3</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>AN DI NAM2 UR5~a</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P006383" target ="_blank">P006383 rev.2.4</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>AN DI NA~a</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P006283" target ="_blank">P006283 obv.1.4</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>AN DI NI~a RAD~a SZE~a@t</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P006082" target ="_blank">P006082 obv.1.2</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>BA DI NAM2 [GAN2] |SZE~a&SZE~a|</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P005068" target ="_blank">P005068 obv.1.3.a</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>BAPPIR~a DI GIBIL NAB |E2~ax1(N57)@t|</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P003529" target ="_blank">P003529 obv.2.3.b1B</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>BARA2~a DI NAB</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P003623" target ="_blank">P003623 obv.2.2.a</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>DI DUB~b LAL2~a SAL</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P001044" target ="_blank">P001044 obv.1.1</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>DI E2~a HI LU2 NUN~a TUN3~a</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P003807" target ="_blank">P003807 obv.1.3</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>DI E2~b</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Lex.: <a href="https://cdli.ucla.edu/P000649" target ="_blank">P000649 obv.2'.3'</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>DI EN~a</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P005144" target ="_blank">P005144 obv.2.6</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>DI EN~a IB~a KA~a |GA2~a2xGU4|</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P003762" target ="_blank">P003762 obv.2.1</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>DI EN~a PA~a</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P006240" target ="_blank">P006240 obv.2.2.a</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>DI GAL~a</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P325238" target ="_blank">P325238 obv.1.5.c</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>DI GI GIR3@g~b KI SZE~a</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P005089" target ="_blank">P005089 obv.3.1</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>DI GI4~b NAM2</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P001472" target ="_blank">P001472 obv.1.1</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>DI GIBIL GU7 NAM2</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P002635" target ="_blank">P002635 obv.1.1</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>DI GIR3@g~b KASZ~b</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P005132" target ="_blank">P005132 obv.1.1</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>DI GIR3@g~b PAP~a</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P005088" target ="_blank">P005088 obv.2.1</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>DI GIR3@g~b [1(N01)] [UDU~a] |U4xX|</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P005217" target ="_blank">P005217 rev.2.5</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>DI GISZ PAP~a ZATU647</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P003655" target ="_blank">P003655 obv.3.5</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>DI GURUSZDA MASZ NAM2 SAL UNUG~a</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P001204" target ="_blank">P001204 obv.1.1</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>DI IM~a</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P002882" target ="_blank">P002882 obv.1.1</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>DI KALAM~h</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P325957" target ="_blank">P325957 obv.1.3</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>DI KA~a RAD~a</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P006107" target ="_blank">P006107 obv.1.2</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>DI KI NAM2</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Lex.: <a href="https://cdli.ucla.edu/P000249" target ="_blank">P000249 obv.3.3'</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>DI MASZ2 RAD~a</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P006086" target ="_blank">P006086 obv.2.3</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>DI MUN~a1</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P001706" target ="_blank">P001706 obv.1.3</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>DI NAB NIN</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P387752" target ="_blank">P387752 obv.1.b1.b01</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>DI NAB SUKKAL |E2~bx1(N57)@t|</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P004447" target ="_blank">P004447 obv.2.2</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>DI NAB SU~a |E2~ax1(N57)@t|</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P003654" target ="_blank">P003654 obv.4.7.b</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>DI NAB TU~a</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P006119" target ="_blank">P006119 obv.1.1.b</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>DI NAB |E2~ax1(N57)@t|</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P006394" target ="_blank">P006394 obv.2.4</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>DI NAM2 SZITA~a1</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P005179" target ="_blank">P005179 obv.3.2</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>DI NAM2 SZITA~a1 UDU~a</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P004501" target ="_blank">P004501 obv.1.1.a</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>DI NAM2 [1(N34) [1(N57)]</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P005070" target ="_blank">P005070 obv.5.a1</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>DI NI~a RAD~a</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P006066" target ="_blank">P006066 obv.2.1</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>DI NU@g SZUM</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P005475" target ="_blank">P005475 obv.1.3</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>DI NUN~a</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P003655" target ="_blank">P003655 obv.7.10</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>DI RAD~a UB</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P006400" target ="_blank">P006400 obv.1.3</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>DI RAD~a UDU~a</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P006144" target ="_blank">P006144 rev.1.2</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>DI SAG</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P325957" target ="_blank">P325957 obv.1.2</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>DI SAL SA~c</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P005334" target ="_blank">P005334 obv.2.5</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>DI SA~c</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P001747" target ="_blank">P001747 obv.3.6</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>DI SZESZ~b</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P001429" target ="_blank">P001429 obv.2.3</a></td>
 						</tr>					</table>
 				</td>
 			</tr>
@@ -230,26 +2398,1001 @@
 						</tr>					</table>
 				</td>
 			</tr>
-
-    </table>
-  </div>
-
-  <div id="Cluster_data2" class="tabcontent">
-    <table class="tbl">
-      <tr>
-        <th>freq.</th>
-        <th>cluster</th>
-        <th>reference</th>
-      </tr>
-      			<tr>
+			<tr>
 				<td>1</td>
+				<td>DI SZITA~a1</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P005256" target ="_blank">P005256 obv.1.2</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>DI UDU~a ZATU705</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P001159" target ="_blank">P001159 obv.1.2</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>DI UDU~a [GIR3@g~b] |U4x1(N01)|</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P005213" target ="_blank">P005213 rev.2.4</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>DI URUDU~a</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P002195" target ="_blank">P002195 obv.2.5</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>DI ZATU625</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P003964" target ="_blank">P003964 obv.1.2</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>DI ZATU659 ZATU795</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P006054" target ="_blank">P006054 rev.1.6.a</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>DI |TUG2~a.(BAD&BAD)|</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P004074" target ="_blank">P004074 obv.1.2</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+		</table>
+</div>
+
+      <div id="Cluster_data2" class="tabcontent">
+		<table class="tbl">
+			<tr>
+				<th>freq.</th>
+				<th>cluster</th>
+				<th>reference</th>
+			</tr>
+			<tr>
+				<td>28</td>
+				<td>DI NAM2</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Lex.: <a href="https://cdli.ucla.edu/P000006" target ="_blank">P000006 obv.1.6</a></td>
+						</tr>						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Lex.: <a href="https://cdli.ucla.edu/P000011" target ="_blank">P000011 obv.1.1'</a></td>
+						</tr>						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Lex.: <a href="https://cdli.ucla.edu/P000071" target ="_blank">P000071 obv.1.3</a></td>
+						</tr>						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Lex.: <a href="https://cdli.ucla.edu/P000161" target ="_blank">P000161 obv.1.3</a></td>
+						</tr>						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Lex.: <a href="https://cdli.ucla.edu/P000179" target ="_blank">P000179 obv.1.3</a></td>
+						</tr>						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Lex.: <a href="https://cdli.ucla.edu/P000234" target ="_blank">P000234 obv.1.3</a></td>
+						</tr>						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Lex.: <a href="https://cdli.ucla.edu/P000247" target ="_blank">P000247 obv.1.3</a></td>
+						</tr>						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Lex.: <a href="https://cdli.ucla.edu/P000264" target ="_blank">P000264 obv.1.3</a></td>
+						</tr>						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Lex.: <a href="https://cdli.ucla.edu/P000345" target ="_blank">P000345 obv.1.3</a></td>
+						</tr>						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Lex.: <a href="https://cdli.ucla.edu/P000589" target ="_blank">P000589 obv.1.3</a></td>
+						</tr>						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Lex.: <a href="https://cdli.ucla.edu/P000601" target ="_blank">P000601 obv.1.3</a></td>
+						</tr>						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Lex.: <a href="https://cdli.ucla.edu/P000636" target ="_blank">P000636 obv.1.1'</a></td>
+						</tr>						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P001459" target ="_blank">P001459 obv.1.3</a></td>
+						</tr>						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P002530" target ="_blank">P002530 obv.1.4</a></td>
+						</tr>						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P002715" target ="_blank">P002715 obv.2.4.a</a></td>
+						</tr>						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P002819" target ="_blank">P002819 obv.2.2.b2</a></td>
+						</tr>						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P005069" target ="_blank">P005069 obv.3.a1</a></td>
+						</tr>						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P005071" target ="_blank">P005071 obv.3.a1</a></td>
+						</tr>						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P005163" target ="_blank">P005163 obv.2.10</a></td>
+						</tr>						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Lex.: <a href="https://cdli.ucla.edu/P006042" target ="_blank">P006042 obv.1.3</a></td>
+						</tr>						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Lex.: <a href="https://cdli.ucla.edu/P006043" target ="_blank">P006043 obv.1.3</a></td>
+						</tr>						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Lex.: <a href="https://cdli.ucla.edu/P006044" target ="_blank">P006044 obv.1.3</a></td>
+						</tr>						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Lex.: <a href="https://cdli.ucla.edu/P006045" target ="_blank">P006045 obv.1.3</a></td>
+						</tr>						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Lex.: <a href="https://cdli.ucla.edu/P006181" target ="_blank">P006181 obv.1.3</a></td>
+						</tr>						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Lex.: <a href="https://cdli.ucla.edu/P006211" target ="_blank">P006211 obv.1.3</a></td>
+						</tr>						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Lex.: <a href="https://cdli.ucla.edu/P006275" target ="_blank">P006275 obv.1.3</a></td>
+						</tr>						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Lex.: <a href="https://cdli.ucla.edu/P253777" target ="_blank">P253777 obv.1.3</a></td>
+						</tr>						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Lex.: <a href="https://cdli.ucla.edu/P464118" target ="_blank">P464118 @surface a.3</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>7</td>
+				<td>DI RAD</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P006047" target ="_blank">P006047 obv.2.5</a></td>
+						</tr>						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P006066" target ="_blank">P006066 obv.1.3</a></td>
+						</tr>						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P006107" target ="_blank">P006107 obv.1.5</a></td>
+						</tr>						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P006128" target ="_blank">P006128 obv.2.1</a></td>
+						</tr>						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P006144" target ="_blank">P006144 obv.2.6</a></td>
+						</tr>						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P006198" target ="_blank">P006198 obv.2.1</a></td>
+						</tr>						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P006383" target ="_blank">P006383 rev.2.2</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>5</td>
+				<td>DI GIR3@g</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P005088" target ="_blank">P005088 obv.1.1</a></td>
+						</tr>						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P005162" target ="_blank">P005162 obv.2.6</a></td>
+						</tr>						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P005163" target ="_blank">P005163 obv.3.9</a></td>
+						</tr>						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P005166" target ="_blank">P005166 rev.1.4</a></td>
+						</tr>						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P005221" target ="_blank">P005221 obv.2.4</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>4</td>
+				<td>DI NAM2 [1(N01)]</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Lex.: <a href="https://cdli.ucla.edu/P000472" target ="_blank">P000472 obv.1.3</a></td>
+						</tr>						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Lex.: <a href="https://cdli.ucla.edu/P000542" target ="_blank">P000542 obv.1.3</a></td>
+						</tr>						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Lex.: <a href="https://cdli.ucla.edu/P000572" target ="_blank">P000572 obv.1.1'</a></td>
+						</tr>						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Lex.: <a href="https://cdli.ucla.edu/P000606" target ="_blank">P000606 obv.1.1'</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>4</td>
+				<td>DI [1(N01)]</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Lex.: <a href="https://cdli.ucla.edu/P000237" target ="_blank">P000237 obv.1.3</a></td>
+						</tr>						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Lex.: <a href="https://cdli.ucla.edu/P000421" target ="_blank">P000421 obv.1'.3'</a></td>
+						</tr>						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Lex.: <a href="https://cdli.ucla.edu/P000492" target ="_blank">P000492 obv.1'.2</a></td>
+						</tr>						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Lex.: <a href="https://cdli.ucla.edu/P000649" target ="_blank">P000649 obv.1'.1'</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>2</td>
 				<td>DI NAB</td>
 				<td>
 					<table border=0 class="plain_tbl">
 						<tr>
 							<td>[---NO IMAGE---]
 							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P005428" target ="_blank">P005428 rev.5.1</a></td>
+						</tr>						<tr>
+							<td>[---NO IMAGE---]
+							</td>
 							<td>Adm.: <a href="https://cdli.ucla.edu/P005456" target ="_blank">P005456 obv.2.6</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>2</td>
+				<td>DI ZATU751</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Lex.: <a href="https://cdli.ucla.edu/P000317" target ="_blank">P000317 obv.3'.5'</a></td>
+						</tr>						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Lex.: <a href="https://cdli.ucla.edu/P471692" target ="_blank">P471692 @surface a.80</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>2</td>
+				<td>NAM2 [DI]</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P001425" target ="_blank">P001425 obv.1.3</a></td>
+						</tr>						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P005072" target ="_blank">P005072 obv.4.a1</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>(NAB DI |BU+DU6|)a</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P004735" target ="_blank">P004735 obv.2.1.b1B1</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>(NAB DI)a</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P006218" target ="_blank">P006218 obv.1.1.b2B</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>A AN BA DI NAM2 UR5</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P006130" target ="_blank">P006130 obv.2.2</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>A DI UD5</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P006082" target ="_blank">P006082 rev.1.1</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>A2 DI NA ZATU636 ZATU766 [N]</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Lex.: <a href="https://cdli.ucla.edu/P000121" target ="_blank">P000121 rev.3.1</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>AD DI PA</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P006177" target ="_blank">P006177 obv.4.10</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>AK BAR DI</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P004778" target ="_blank">P004778 obv.3.5</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>AN DI GIR3 PIRIG SZU SZU2</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P004754" target ="_blank">P004754 obv.1.2.a</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>AN DI HI PAP</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P005378" target ="_blank">P005378 obv.1.3</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>AN DI NA</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P006283" target ="_blank">P006283 obv.1.4</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>AN DI NAM2 UR5</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P006383" target ="_blank">P006383 rev.2.4</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>AN DI NI RAD SZE@t</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P006082" target ="_blank">P006082 obv.1.2</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>BA DI NAM2 [GAN2] |SZE&SZE|</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P005068" target ="_blank">P005068 obv.1.3.a</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>BAPPIR DI GIBIL NAB |E2x1(N57)@t|</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P003529" target ="_blank">P003529 obv.2.3.b1B</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>BARA2 DI NAB</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P003623" target ="_blank">P003623 obv.2.2.a</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>DI DUB LAL2 SAL</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P001044" target ="_blank">P001044 obv.1.1</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>DI E2</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Lex.: <a href="https://cdli.ucla.edu/P000649" target ="_blank">P000649 obv.2'.3'</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>DI E2 HI LU2 NUN TUN3</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P003807" target ="_blank">P003807 obv.1.3</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>DI EN</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P005144" target ="_blank">P005144 obv.2.6</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>DI EN IB KA |GA2xGU4|</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P003762" target ="_blank">P003762 obv.2.1</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>DI EN PA</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P006240" target ="_blank">P006240 obv.2.2.a</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>DI GAL</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P325238" target ="_blank">P325238 obv.1.5.c</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>DI GI GIR3@g KI SZE</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P005089" target ="_blank">P005089 obv.3.1</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>DI GI4 NAM2</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P001472" target ="_blank">P001472 obv.1.1</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>DI GIBIL GU7 NAM2</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P002635" target ="_blank">P002635 obv.1.1</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>DI GIR3@g KASZ</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P005132" target ="_blank">P005132 obv.1.1</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>DI GIR3@g PAP</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P005088" target ="_blank">P005088 obv.2.1</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>DI GIR3@g [1(N01)] [UDU] |U4xX|</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P005217" target ="_blank">P005217 rev.2.5</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>DI GISZ PAP ZATU647</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P003655" target ="_blank">P003655 obv.3.5</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>DI GURUSZDA MASZ NAM2 SAL UNUG</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P001204" target ="_blank">P001204 obv.1.1</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>DI IM</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P002882" target ="_blank">P002882 obv.1.1</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>DI KA RAD</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P006107" target ="_blank">P006107 obv.1.2</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>DI KALAM</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P325957" target ="_blank">P325957 obv.1.3</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>DI KI NAM2</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Lex.: <a href="https://cdli.ucla.edu/P000249" target ="_blank">P000249 obv.3.3'</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>DI MASZ2 RAD</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P006086" target ="_blank">P006086 obv.2.3</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>DI MUN</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P001706" target ="_blank">P001706 obv.1.3</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>DI NAB NIN</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P387752" target ="_blank">P387752 obv.1.b1.b01</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>DI NAB SU |E2x1(N57)@t|</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P003654" target ="_blank">P003654 obv.4.7.b</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>DI NAB SUKKAL |E2x1(N57)@t|</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P004447" target ="_blank">P004447 obv.2.2</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>DI NAB TU</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P006119" target ="_blank">P006119 obv.1.1.b</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>DI NAB |E2x1(N57)@t|</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P006394" target ="_blank">P006394 obv.2.4</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>DI NAM2 SZITA</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P005179" target ="_blank">P005179 obv.3.2</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>DI NAM2 SZITA UDU</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P004501" target ="_blank">P004501 obv.1.1.a</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>DI NAM2 [1(N34) [1(N57)]</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P005070" target ="_blank">P005070 obv.5.a1</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>DI NI RAD</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P006066" target ="_blank">P006066 obv.2.1</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>DI NU@g SZUM</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P005475" target ="_blank">P005475 obv.1.3</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>DI NUN</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P003655" target ="_blank">P003655 obv.7.10</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>DI RAD UB</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P006400" target ="_blank">P006400 obv.1.3</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>DI RAD UDU</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P006144" target ="_blank">P006144 rev.1.2</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>DI SA</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P001747" target ="_blank">P001747 obv.3.6</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>DI SA SAL</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P005334" target ="_blank">P005334 obv.2.5</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>DI SAG</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P325957" target ="_blank">P325957 obv.1.2</a></td>
 						</tr>					</table>
 				</td>
 			</tr>
@@ -265,14 +3408,107 @@
 						</tr>					</table>
 				</td>
 			</tr>
+			<tr>
+				<td>1</td>
+				<td>DI SZESZ</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P001429" target ="_blank">P001429 obv.2.3</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>DI SZITA</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P005256" target ="_blank">P005256 obv.1.2</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>DI UDU ZATU705</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P001159" target ="_blank">P001159 obv.1.2</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>DI UDU [GIR3@g] |U4x1(N01)|</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P005213" target ="_blank">P005213 rev.2.4</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>DI URUDU</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P002195" target ="_blank">P002195 obv.2.5</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>DI ZATU625</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P003964" target ="_blank">P003964 obv.1.2</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>DI ZATU659 ZATU795</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P006054" target ="_blank">P006054 rev.1.6.a</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>DI |TUG2.(BAD&BAD)|</td>
+				<td>
+					<table border=0 class="plain_tbl">
+						<tr>
+							<td>[---NO IMAGE---]
+							</td>
+							<td>Adm.: <a href="https://cdli.ucla.edu/P004074" target ="_blank">P004074 obv.1.2</a></td>
+						</tr>					</table>
+				</td>
+			</tr>
+		</table>
+</div>
 
-    </table>
-  </div>
-
-
-
-  <script>
-    function openTab(evt, cityName) {
+    <script>
+    function openCity(evt, cityName) {
       var i, tabcontent, tablinks;
       tabcontent = document.getElementsByClassName("tabcontent");
       for (i = 0; i < tabcontent.length; i++) {
@@ -285,12 +3521,11 @@
       document.getElementById(cityName).style.display = "block";
       evt.currentTarget.className += " active";
     }
-
+    
     // Get the element with id="defaultOpen" and click on it
     document.getElementById("defaultOpen").click();
-  </script>
-
-
-</body>
-
-</html>
+    </script>
+    
+    
+    </body>
+    </html>
