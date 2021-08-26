@@ -12,19 +12,46 @@
       body {
         font-family: Verdana, sans-serif;
         font-size: 10.5pt;
-        line-height: 12pt;
+        line-height: 150%;
         word-wrap: normal;
         padding: 2em;
+      }
+      a:link {
+        color: #cc071e;
+        text-decoration: none;
+      }
+
+      /* visited link */
+      a:visited {
+        color: #cc071e;
+      }
+
+      /* mouse over link */
+      a:hover {
+        color: #cc071e;
+        text-decoration: underline;
+      }
+
+      /* selected link */
+      a:active {
+        color: #ec5a4f;
+        text-decoration: underline;
       }
     </STYLE>
   </head>
   <body>
-    <p>This page provides database data in <a href="https://www.json.org/" target="_blank">JSON</a> format, in order to maximize interoperability and data exploitation.</p>
+    <p>This page provides data in open formats, in in order to maximize interoperability and data exploitation.</p>
+    <p><b>1.</b> <a href="https://www.json.org/" target="_blank">JSON</a> data:</p>
     <ul>
-      <li><a href="json\WritEMe_graphemic_db_transliteration_data.json" target="_blank">transliteration data</a></li>
-      <li><a href="json\WritEMe_graphemic_db_variation_data.json.json" target="_blank">variation data</a></li>
-      <li><a href="json\WritEMe_graphemic_db_cluster1_data.json.json" target="_blank">cluster data (1)</a></li>
-      <li><a href="json\WritEMe_graphemic_db_cluster2_data.json.json" target="_blank">cluster data (2)</a></li>
+      <li><a href="https://github.com/MMaiocchi/WritEMe_Uruk_palaeography/blob/main/json/WritEMe_graphemic_db_transliteration_data.json" target="_blank">transliteration data</a></li>
+      <li><a href="https://github.com/MMaiocchi/WritEMe_Uruk_palaeography/blob/main/json/WritEMe_graphemic_db_variation_data.json" target="_blank">variation data</a></li>
+      <li><a href="https://github.com/MMaiocchi/WritEMe_Uruk_palaeography/blob/main/json/WritEMe_graphemic_db_cluster1_data.json" target="_blank">cluster data (1)</a></li>
+      <li><a href="https://github.com/MMaiocchi/WritEMe_Uruk_palaeography/blob/main/json/WritEMe_graphemic_db_cluster2_data.json" target="_blank">cluster data (2)</a></li>
+    </ul>
+    <p><b>2.</b> Other downloads:</p>
+    <ul>
+      <li><a href="https://github.com/MMaiocchi/WritEMe_Uruk_palaeography/tree/main/scripts" target="_blank">Scripts</a> for populating the database on the basis of input data.</li>
+      <li><a href="https://github.com/MMaiocchi/WritEMe_Uruk_palaeography/tree/main/images" target="_blank">Images</a> displayed on the database.</li>
     </ul>
   </body>
 </html>

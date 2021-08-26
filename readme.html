@@ -11,12 +11,34 @@ html,body{
 body {
   font-family: Verdana, sans-serif;
   font-size: 10.5pt;
-  line-height: 12pt;
+  line-height: 150%;
   overflow-y: auto;
   overflow-x: auto;
 }
 p {
     word-wrap: break-word;
+}
+/* unvisited link */
+a:link {
+  color: #cc071e;
+  text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+  color: #cc071e;
+}
+
+/* mouse over link */
+a:hover {
+  color: #cc071e;
+  text-decoration: underline;
+}
+
+/* selected link */
+a:active {
+  color: #ec5a4f;
+  text-decoration: underline;
 }
 div {
   padding: 2em;
